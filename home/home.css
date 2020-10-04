@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+header {
+  height: 90vh;
+  background: url("../bgh.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header .showcase {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+header .showcase video {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+}
+header .logo {
+  position: relative;
+  margin-left: 1.5rem;
+  padding-top: 1rem;
+  z-index: 3;
+  width: min-content;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.hamburger {
+  background: transparent;
+  height: 2rem;
+  width: 3rem;
+  left: 90%;
+  bottom: 7.5%;
+  position: relative;
+  z-index: 3;
+}
+.hamburger .ham {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.hamburger .line {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #7300e6, #3366ff);
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+header .main {
+  width: 30%;
+  height: min-content;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10%;
+  margin-left: 15%;
+  color: #fff;
+}
+header .main h3 {
+  font-size: 2.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+header .main p {
+  font-size: 0.8rem;
+  margin-top: 8%;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 7%;
+}
+
+#menu {
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(45deg, #fff 50%, #b380ff 50%);
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+  left: 0%;
+  display: none;
+  transition: all 0.5s ease;
+}
+#menu .pic {
+  float: left;
+  width: fit-content;
+}
+
+#menu .pic img {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+#menu .pic img {
+  width: 25%;
+}
+
+#menu .links {
+  height: 50%;
+  width: 50%;
+  top: 30%;
+  position: absolute;
+  margin: auto;
+  left: 40%;
+}
+#menu .links .nav-item {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15%;
+}
+#menu .links .nav-item .nav-links {
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  transition: all 1s ease;
+}
+
+#menu .links .nav-item .nav-links a {
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 2s ease;
+}
+
+#menu .links .nav-item .nav-links:hover {
+  transform: scale(1.5);
+}
+/* Intro */
+
+hr {
+  /*color: rgb(54,40,56);*/
+  margin-top: 2%;
+  width: 40px;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: #f9d56e;*/
+  border-top: 5px dotted #095484;
+  border-bottom: 0;
+}
+.container {
+  align-content: center;
+  margin-top: 0;
+  height: 75vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #bb99ff, #c3aed6);
+  float: left;
+}
+.head {
+  left: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0%;
+    margin-top: 5%;
+  padding-right: 40%;
+  padding-left: 7%;
+}
+.head1 {
+  position: relative;
+  color: #7d0633;
+  font-size: 20px;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 2px;
+}
+.head2 {
+  font-size: 9px;
+  position: relative;
+  color: #512b58;
+  font-family: "Roboto Mono", monospace;
+}
+.head3 {
+  font-size: 12px;
+  position: relative;
+  color: #e94560;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 2px;
+}
+.planet {
+  float: right;
+  top: 98%;
+  padding-left: 30%;
+  position: absolute;
+  z-index: 2;
+  height: 50%;
+  width: 25%;
+  margin-top: 1rem;
+}
+
+.btn {
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+  color: #512b58;
+  width: 256px;
+  height: 66px;
+  line-height: 64px;
+  transition: all 0.3s;
+  span {
+    transition: all 0.3s;
+    tranform: scale(1, 1);
+  }
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.btn-two::before,
+.btn-two::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+  border: 2px solid rgb(54, 40, 56);
+}
+
+.btn-two::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+.btn-two::before {
+  animation-name: rotateccw;
+  animation-duration: 3s;
+}
+.btn-two::after,
+.btn-two::before {
+  left: 90px;
+  width: 84px;
+  height: 84px;
+  top: -9px;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatecw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* quote */
+
+.mar {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #ffb366;
+}
+
+.mar .vid {
+  height: 80%;
+  width: 30%;
+  background: url("../tennis.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.mar .text {
+  width: 40%;
+  height: min-content;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.mar .text span {
+  font-weight: bolder !important;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+#lg {
+  color: #7d0633;
+  font-size: 1.5rem;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 2px;
+}
+/* Sports */
+
+.sports {
+  width: 100vw;
+  height: 80vh;
+  min-height: fit-content;
+  justify-content: center;
+  background: linear-gradient(20deg, #ddccff 50%, #f6f6f6 50%);
+}
+
+.sports .headn {
+  width: 100%;
+  height: min-content;
+  margin: auto;
+  text-align: center;
+  padding-top: 4%;
+  color: #ffa64d;
+  font-size: 1.5rem;
+  font-family: "Staatliches", cursive !important;
+  letter-spacing: 2px;
+}
+.sports .headn h3 {
+  font-size: 2.5rem;
+  /*font-family: "Josefin Sans", sans-serif;*/
+}
+
+.sports .car {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sports .car .wrap {
+  height: 100%;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sports .car .wrap img {
+  width: 30%;
+  object-fit: cover;
+
+  display: inline-block;
+}
+
+.sports .car .wrap h4 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.sports .next {
+  height: 20%;
+  width: 100% !important;
+  justify-content: center;
+  margin: auto;
+  margin-left: 45%;
+}
+.sports .next #nextp {
+  margin: auto;
+  height: 40px;
+  width: 130px;
+  background: #ffa64d;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  transition: all 1s ease;
+  margin-bottom: ;
+}
+
+.sports .next #nextp a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.sports .next #nextp:hover {
+  background: linear-gradient(45deg, #e699ff, #99d6ff);
+  border: solid 2px #e699ff;
+}
+
+/*footer*/
+
+footer {
+  height: 50vh;
+  width: 100vw;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-y: hidden;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(20deg, #f6f6f6 50%, #b380ff 50%);
+}
+footer span {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+footer .left {
+  height: 90%;
+  position: relative;
+  width: 40%;
+  margin: auto;
+  top: 50px;
+}
+
+footer .right {
+  height: 90%;
+  position: relative;
+  width: 40%;
+  margin: auto;
+  top: 50px;
+}
+
+footer .right .quick .links {
+  margin-top: 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 2s ease;
+}
+footer .right .quick .links .nav-item {
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 2s ease;
+}
+footer .right .quick .links .nav-item a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: #000;
+}
+#socials {
+  font-size: 2rem;
+}
+
+@media (max-width: 720px) {
+  .hamburger {
+    left: 75%;
+    margin-top: 3px;
+  }
+  header .main {
+    width: 60%;
+    height: min-content;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding-top: 40%;
+    color: #fff;
+    text-align: center;
+  }
+  #menu .pic {
+    display: none;
+  }
+  #menu .pic img {
+    display: none;
+  }
+
+  .planet {
+    display: none !important;
+  }
+  #hide .container {
+    margin: auto;
+  }
+  #hide .container .head {
+    padding: 0%;
+    margin: auto;
+  }
+  .mar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .mar .vid {
+    height: 80%;
+    width: 30%;
+  }
+
+  .mar .text {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+  }
+  .sports .car .wrap img {
+    width: 50%;
+    margin-top: 4rem;
+  }
+
+  .sports {
+    height: 60vh;
+  }
+  .sports .next {
+    margin-left: 35%;
+    position: relative;
+    height: fit-content;
+    top: 100px;
+  }
+  .sports .car {
+    height: 20%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: hidden;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  footer .left {
+    width: 100%;
+    text-align: center !important;
+  }
+  footer .right {
+    width: 100%;
+    text-align: center !important;
+  }
+}

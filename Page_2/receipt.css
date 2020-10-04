@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+}
+body {
+  background: linear-gradient(45deg, #bb99ff, #e6f2ff);
+
+  height: 100vh;
+}
+
+.logo {
+  height: 20%;
+  width: fit-content;
+  margin: auto;
+  color: #7d0633;
+  font-size: 1.5rem;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 2px;
+  position: relative;
+  top: 20px;
+}
+
+.details {
+  height: 60%;
+  width: 80%;
+  position: relative;
+  top: 50px;
+  margin: auto;
+}
+
+.thanks-giving {
+  height: 20%;
+  width: fit-content;
+  margin: auto;
+  color: #ff6699;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.details > section {
+  margin-bottom: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  border-bottom: dotted black 2px;
+}
+
+@media (max-width: 720px) {
+  .details {
+    height: 40%;
+  }
+  .details > section {
+    margin-bottom: 2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content"></div>
+
+    <div class="loader-wrapper">
+      <span class="loader">
+        <img class="loader2" src="ast1.gif" /><span class="loader-inner"></span
+      ></span>
+      <div class="head">
+        <div class="head1">
+          <h1>Hold on voyager!</h1>
+        </div>
+        <div class="head2"><h2>We're building your tracks..</h2></div>
+        <div class="head1"><h2>(Less than a parsec to go)</h2></div>
+      </div>
+    </div>
+
+    <script>
+      /*$(window).on("load", function () {
+        $(window.redirect("../home/home.html")).fadeOut("slow");
+      });*/
+        var timer = setTimeout(function() {
+            window.location="./home/home.html"
+        }, 5000);
+    </script>
+  </body>
+</html>
